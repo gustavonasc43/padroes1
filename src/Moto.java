@@ -1,8 +1,8 @@
-class Moto extends Veiculo {
+class Moto extends VeiculoTerrestre {
     private String sistemaPartida;
 
-    public Moto(String identificacao, double valorCompra, String sistemaPartida) {
-        super(identificacao, valorCompra);
+    public Moto(String identificacao, double valorCompra, String motor, String placa, String sistemaPartida) {
+        super(identificacao, valorCompra, motor, placa);
         this.sistemaPartida = sistemaPartida;
     }
 
