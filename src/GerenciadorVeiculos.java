@@ -1,4 +1,5 @@
 import java.util.*;
+import java.util.stream.Collectors;
 
 class GerenciadorVeiculos {
     private List<Veiculo> veiculos;
@@ -37,14 +38,10 @@ class GerenciadorVeiculos {
     }
 
     public List<Veiculo> veiculosPorTipoOrdenados(Class<? extends Veiculo> tipo) {
-        List<Veiculo> veiculosFiltrados = new ArrayList<>();
-        for (Veiculo veiculo : veiculos) {
-            if (tipo.isInstance(veiculo)) {
-                veiculosFiltrados.add(veiculo);
-            }
-        }
-        veiculosFiltrados.sort(Comparator.comparing(v -> v.identificacao));
-        return veiculosFiltrados;
+        return veiculos.stream()
+                .filter(tipo::isInstance)
+                .sorted(Comparator.comparing(v -> v.identificacao))
+                .collect(Collectors.toList());
     }
 
     public Veiculo veiculoComDiariaMaisCara() {
