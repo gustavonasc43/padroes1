@@ -1,8 +1,8 @@
-class Helicoptero extends Veiculo {
+class Helicoptero extends VeiculoAereo {
     private int quantidadeRotores;
 
-    public Helicoptero(String identificacao, double valorCompra, int quantidadeRotores) {
-        super(identificacao, valorCompra);
+    public Helicoptero(String identificacao, double valorCompra, int quantidadeRotores, double tempoDeVoo) {
+        super(identificacao, valorCompra, tempoDeVoo);
         this.quantidadeRotores = quantidadeRotores;
     }
 
