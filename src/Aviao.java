@@ -1,8 +1,8 @@
-class Aviao extends Veiculo {
+class Aviao extends VeiculoAereo {
     private double velocidadeCruzeiro;
 
-    public Aviao(String identificacao, double valorCompra, double velocidadeCruzeiro) {
-        super(identificacao, valorCompra);
+    public Aviao(String identificacao, double valorCompra, double velocidadeCruzeiro, double tempoDeVoo) {
+        super(identificacao, valorCompra, tempoDeVoo);
         this.velocidadeCruzeiro = velocidadeCruzeiro;
     }
 
