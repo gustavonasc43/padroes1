@@ -1,6 +1,6 @@
-class Carro extends Veiculo {
-    public Carro(String identificacao, double valorCompra) {
-        super(identificacao, valorCompra);
+class Carro extends VeiculoTerrestre {
+    public Carro(String identificacao, double valorCompra, String motor, String placa) {
+        super(identificacao, valorCompra, motor, placa);
     }
 
     @Override

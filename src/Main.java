@@ -2,20 +2,21 @@ public class Main {
     public static void main(String[] args) {
         GerenciadorVeiculos gerenciador = new GerenciadorVeiculos();
 
-        Aviao aviao1 = new Aviao("AV001", 1000000, 500);
-        Carro carro1 = new Carro("CAR001", 30000);
+        /*Aviao aviao1 = new Aviao("AV001", 1000000, 500);*/
+        Carro carro1 = new Carro("CAR001", 30000, "Motor 1.0", "ABC1234");/*
         Helicoptero heli1 = new Helicoptero("HEL001", 500000, 4);
         Moto moto1 = new Moto("MOT001", 20000, "elétrico");
         Onibus onibus1 = new Onibus("ONI001",150000, 50);
         Aviao aviao2  =new Aviao("BV002", 10, 1);
+*/
 
 
-        gerenciador.adicionarVeiculo(aviao1);
+/*        gerenciador.adicionarVeiculo(aviao1);*/
         gerenciador.adicionarVeiculo(carro1);
-        gerenciador.adicionarVeiculo(heli1);
+/*        gerenciador.adicionarVeiculo(heli1);
         gerenciador.adicionarVeiculo(moto1);
         gerenciador.adicionarVeiculo(onibus1);
-        gerenciador.adicionarVeiculo(aviao2);
+        gerenciador.adicionarVeiculo(aviao2);*/
 
 
         System.out.println("Valor da diária do avião AV001: " + gerenciador.calcularDiariaPorIdentificacao("AV001"));
